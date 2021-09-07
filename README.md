@@ -1,4 +1,4 @@
-# leaflet-challenge
+# USGS-Earthquake Analysis
 
 ## Background 
 
