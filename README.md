@@ -14,6 +14,7 @@ The app functionality is compartmentalized into the following categories/functio
 1. buildMap(): Function that uses Leaflet.js and the mapbox api to build a streetmap, darkmap, and satellite map. Additionally, the function takes the earthquake data and layout information from extractFeatures() to apply circles to the map according to earthquake location as well as offer a legend in the bottom right hand corner of the page for the user to understand the significance of the color scale.
 
 ![image](https://raw.github.com/ahop92/USGS-Earthquake-Analysis/main/images/mapselect.PNG)
+
 ![image](https://raw.github.com/ahop92/USGS-Earthquake-Analysis/main/images/legend.PNG)
 
 2. fillCircle(): Function that dictates the color of the circle according to the depth of the earthquake
