@@ -12,7 +12,7 @@ function buildMap(earthquakes) {
       maxZoom: 18,
       zoomOffset: -1,
       id: "mapbox/streets-v11",
-      accessToken: API_KEY,
+      accessToken: API_KEY
     }
   );
 
@@ -23,7 +23,7 @@ function buildMap(earthquakes) {
         'Map Copyright: <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
       maxZoom: 18,
       id: "dark-v10",
-      accessToken: API_KEY,
+      accessToken: API_KEY
     }
   );
 
@@ -34,7 +34,7 @@ function buildMap(earthquakes) {
         "Map Copyright: <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='https://docs.mapbox.com/help/glossary/mapbox-satellite/'>Satellite Map</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>",
       maxZoom: 19,
       id: "satellite-v9",
-      accessToken: API_KEY,
+      accessToken: API_KEY
     }
   );
 
@@ -47,14 +47,14 @@ function buildMap(earthquakes) {
 
   // Create overlay object to hold the overlay layer
   var overlayMaps = {
-    Earthquakes: earthquakes,
+    Earthquakes: earthquakes
   };
 
   // Create the map and apply default layers
   var myMap = L.map("map", {
     center: [37.09, -95.71],
     zoom: 5,
-    layers: [streetmap, earthquakes],
+    layers: [streetmap, earthquakes]
   });
 
   // Create layer control
@@ -62,7 +62,7 @@ function buildMap(earthquakes) {
   // Add the map layer control feature to the map
   L.control
     .layers(baseMaps, overlayMaps, {
-      collapsed: false,
+      collapsed: false
     })
     .addTo(myMap);
 
